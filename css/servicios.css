@@ -1,0 +1,54 @@
+.servicios{
+    background-color: #ff3600;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.tarjeta {
+    border: 2px solid #000000; /* Grosor del borde de 2px y color anaranjado */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Agrega una animación cuando se pasa el mouse sobre la tarjeta */
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: orange;
+    border: 2px solid #FF4500; /* Cambia el color del borde cuando se pasa el mouse */
+}
+
+.imagen {
+    width: 80%;
+    height: 50%;
+}
+
+/* Media query para tablet (de 426px a 768px) */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query para dispositivos móviles (hasta 424px) */
+@media (max-width: 424px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}

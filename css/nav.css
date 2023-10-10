@@ -1,0 +1,93 @@
+/* Estilo de la barra de navegación */
+.navbar {
+  background-color: #00000071;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+  top: 0; /* La coloca en la parte superior de la ventana */
+  left: 0; /* Alinea a la izquierda */
+  right: 0; /* Alinea a la derecha */
+  transition: top 0.3s; /* Agrega una transición suave cuando se muestra/oculta */
+}
+/* Estilo de los enlaces de navegación */
+.navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s; /* Agregar una transición suave para el cambio de color */
+}
+
+/* Cambiar el color a naranja cuando se pasa el mouse sobre los enlaces */
+.navbar-menu a:hover {
+  color: orange; /* Cambiar el color a naranja */
+}
+
+
+/* Estilo del logotipo en la barra de navegación */
+.logo img {
+  max-width: 100px; /* Ajusta el ancho máximo de la imagen del logotipo */
+}
+
+/* Estilo del botón de menú desplegable en dispositivos móviles */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Estilo de las barras horizontales en el botón de menú desplegable */
+.navbar-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2px 0;
+}
+
+/* Estilo de la lista de enlaces de navegación */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Estilo de los elementos de la lista de enlaces de navegación */
+.navbar-menu li {
+  margin: 0 10px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilos específicos para dispositivos móviles (menos de 768px) */
+@media (max-width: 768px) {
+
+
+       /* Mostrar el botón de menú desplegable en lugar de la lista de enlaces */
+    .navbar-toggle {
+      display: flex;
+  }
+
+  /* Ocultar la lista de enlaces en dispositivos móviles */
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: fixed; /* Cambiar a posición fija */
+      background-color: #33333391;
+      top: 3.5%; /* Alineación en la parte superior de la ventana */
+      left: 0; /* Alineación a la izquierda */
+      right: 0; /* Alineación a la derecha */
+      bottom: 0; /* Alineación en la parte inferior de la ventana */
+      z-index: 1; /* Colocar el menú por encima de otros elementos */
+  }
+
+  /* Mostrar la lista de enlaces cuando está activa (haciendo clic en el botón de menú) */
+  .navbar-menu.active {
+      display: flex;
+  }
+  }

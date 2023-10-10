@@ -1,0 +1,147 @@
+/* Estilos para la sección hero-section */
+.hero-section {
+    /*background-image: url('../assets/hero/asdw-transformed.png');    
+    background-size: 40% ; /* Mostrar la imagen al 50% de su tamaño original */
+    /*background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-image: url('../assets/hero/1040.svg');
+    background-size: 100%;
+    background-position: bottom center; 
+    background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
+    color: #fff; /* Color de texto */
+    height: 100vh; /* Altura igual al 100% de la altura de la ventana */
+    display: flex; /* Hacer que los elementos internos sean flexibles */
+    flex-direction: column; /* Apilar elementos internos verticalmente */
+    justify-content: center; /* Centrar verticalmente el contenido */
+    align-items: center; /* Centrar horizontalmente el contenido */
+    text-align: center; /* Alinear el contenido al centro */
+ 
+  }
+  
+  
+  .hero {
+    max-width: 100%; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */  
+  }
+
+  .ImagHero{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;  
+  }
+  .ImagHero img{
+    position: absolute;
+    width: calc(40% - 1px);
+    z-index: -1;  
+    top: 15%;
+    left: 30%;
+  }
+
+  /*.hero img{
+    width: 60vh;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  /* Estilos para el texto dentro de la sección hero */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación al título y al párrafo */
+  .hero h2, .hero p {
+    animation: fadeIn 1s ease-in-out; /* Duración de la animación: 1 segundo */
+  }
+  
+/* Estilos para el título */
+.hero h2 {
+  font-size: 4rem; /* Tamaño del texto del título */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Agregar sombra al título */
+}
+
+/* Estilos para el párrafo */
+.hero p {
+  font-size: 1.5rem; /* Tamaño del texto del párrafo */
+  margin-bottom: 5%; /* Espaciado inferior del párrafo */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Agregar sombra al párrafo */
+}
+  
+  /* Estilos para los botones */
+  .buttons a {
+    display: inline-block; /* Hacer que los botones sean elementos en línea */
+    margin-right: 10px; /* Espaciado derecho entre botones */
+    padding: 8px 16px; /* Reducir el espaciado interior de los botones */
+    font-size: 14px; /* Reducir el tamaño de fuente de los botones */
+    background-color: #007BFF; /* Color de fondo de los botones */
+    color: #fff; /* Color de texto de los botones */
+    text-decoration: none; /* Quitar subrayado de enlaces */
+    border-radius: 5px; /* Borde redondeado de los botones */
+  }
+  
+  /* Estilos para hacer los botones responsivos */
+  @media screen and (max-width: 1440px) {
+    .hero-section{
+      background-image: url('../assets/hero/1440a.svg');
+      background-size: 100%;
+      background-position: bottom center; 
+      background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
+    }
+  }
+
+
+    @media screen and (max-width: 768px) {
+    .buttons a {
+        display: inline-block; /* Cambiar a bloque en pantallas pequeñas para apilar los botones */
+        margin-bottom: 10px; /* Espaciado inferior entre botones apilados */
+        font-size: 16px; /* Ajustar el tamaño de fuente en pantallas pequeñas si es necesario */
+        padding: 10px 20px; /* Restaurar el espaciado interior de los botones en pantallas pequeñas si es necesario */
+      }
+      .hero-section{
+        background-image: url('../assets/hero/764.svg');
+        background-size: 100%;
+        background-position: bottom center; 
+        background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
+      }
+      .ImagHero img{
+
+        width: calc(60% - 1px);
+        top: 15%;
+        left: 20%;
+      }
+      .hero h2 {
+        font-size: 3rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+
+  }
+
+  @media screen and (max-width: 425px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: .8rem;
+    }
+    .hero-section{
+      background-image: url('../assets/hero/425a.svg');
+      background-size: 100%;
+      background-position: bottom center; 
+      background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */     
+    }
+    .ImagHero img{
+
+      width: calc(80% - 1px);
+      top: 20%;
+      left: 10%;
+    }
+    
+  }
+  
