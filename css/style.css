@@ -4,3 +4,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(47, 42, 75);
   }
+
+:root {
+  --bg-color: #00000071;
+  --op-color: #33333391;
+  --button-color: orange;
+  --white-color: #fff;
+  --shadow-color:rgba(0, 0, 0, .2);
+}
+
