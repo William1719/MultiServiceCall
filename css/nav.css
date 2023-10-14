@@ -75,11 +75,14 @@
 
   /* Ocultar la lista de enlaces en dispositivos móviles */
   .navbar-menu {
+      text-align: center;
+      font-size: calc(2em + 1vw);
+      line-height: 250%;
       display: none;
       flex-direction: column;
       position: fixed; /* Cambiar a posición fija */
-      background-color: #33333391;
-      top: 3.5%; /* Alineación en la parte superior de la ventana */
+      background-color: #000000d3;
+      top: 0%; /* Alineación en la parte superior de la ventana */
       left: 0; /* Alineación a la izquierda */
       right: 0; /* Alineación a la derecha */
       bottom: 0; /* Alineación en la parte inferior de la ventana */

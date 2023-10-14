@@ -1,33 +1,46 @@
 .contact h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    font-size: calc(2em + 1vw);
+    color: black;
 }
 
 .contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
+    max-width: 100%;
+    margin: 1% auto;
+    margin-bottom: 1%;
     text-align: center;
-    margin-bottom: 3rem;
+    
+}
+
+.contact{
+    background-color: rgb(255, 255, 255);
+    margin: 5% 5%;
+    border-radius: 2%;
+    padding: 2% 2%;
 }
 
 .contact form .input-box {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Centramos horizontalmente los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+    gap: 1rem; 
+
 }
 
 .contact form .input-box input, .contact form textarea {
-    width: 180%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
+    width: 98%;
+    padding: 0.5%;
+    font-size:calc(0.5em + 1vw);
     color: var(--white-color);
     background: var(--bg-color);
     border-radius: .8rem;
-    margin: .7rem 0;
+    margin: 1% 0;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
 }
 
 .contact form .input-box input {
-    width: 49%;
+    width: 95%;
 }
 
 .contact form textarea {
@@ -36,5 +49,20 @@
 
 .contact form .btn {
     margin-top: 2rem;
-    cursor: pointer;
+    cursor: pointer; 
 }
+
+.BotonContacto{
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .contact form .input-box {
+        grid-template-columns: 1fr;
+    }
+    .contact form .input-box input {
+        width: 92%;
+    }
+
+}
+

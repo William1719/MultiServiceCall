@@ -3,10 +3,6 @@
     /*background-image: url('../assets/hero/asdw-transformed.png');    
     background-size: 40% ; /* Mostrar la imagen al 50% de su tamaño original */
     /*background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-image: url('../assets/hero/1040.svg');
-    background-size: 100%;
-    background-position: bottom center; 
-    background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
     color: #fff; /* Color de texto */
     height: 100vh; /* Altura igual al 100% de la altura de la ventana */
     display: flex; /* Hacer que los elementos internos sean flexibles */
@@ -85,28 +81,12 @@
   }
   
   /* Estilos para hacer los botones responsivos */
-  @media screen and (max-width: 1440px) {
-    .hero-section{
-      background-image: url('../assets/hero/1440a.svg');
-      background-size: 100%;
-      background-position: bottom center; 
-      background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
-    }
-  }
-
-
     @media screen and (max-width: 768px) {
     .buttons a {
         display: inline-block; /* Cambiar a bloque en pantallas pequeñas para apilar los botones */
         margin-bottom: 10px; /* Espaciado inferior entre botones apilados */
         font-size: 16px; /* Ajustar el tamaño de fuente en pantallas pequeñas si es necesario */
         padding: 10px 20px; /* Restaurar el espaciado interior de los botones en pantallas pequeñas si es necesario */
-      }
-      .hero-section{
-        background-image: url('../assets/hero/764.svg');
-        background-size: 100%;
-        background-position: bottom center; 
-        background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */
       }
       .ImagHero img{
 
@@ -130,12 +110,7 @@
     .hero p {
       font-size: .8rem;
     }
-    .hero-section{
-      background-image: url('../assets/hero/425a.svg');
-      background-size: 100%;
-      background-position: bottom center; 
-      background-repeat: no-repeat;/* Centrar la imagen en la parte inferior */     
-    }
+
     .ImagHero img{
 
       width: calc(80% - 1px);

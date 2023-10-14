@@ -1,5 +1,7 @@
 .servicios{
+    margin: 5%;
     background-color: #000000;
+    border-radius: 2%;
 }
 
 .contenedor {
@@ -15,7 +17,7 @@
 }
 
 .tarjeta {
-    border: 2px solid #000000; /* Grosor del borde de 2px y color anaranjado */
+    border: 5% solid #000000; /* Grosor del borde de 2px y color anaranjado */
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
